@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border radius animation</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid rgb(169, 34, 34);
+            position: absolute;
+        }
+
+        .animation1 {
+            border-radius: 50px 90px 102px 66px/ 100px 100px 60px 70px;
+            animation: circle-loop 5s linear infinite;
+        }
+
+        .animation2 {
+            border-radius: 60px 100px 120px 80px/ 50px 120px 82px 50px;
+            animation: circle-loop 3s linear infinite;
+        }
+
+        .animation3 {
+            border-radius: 80px 110px 90px 100px/ 15px 100px 120px 100px;
+            animation: circle-loop 6s linear infinite;
+        }
+
+        @keyframes circle-loop {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box animation1"></div>
+        <div class="box animation2"></div>
+        <div class="box animation3"></div>
+    </div>
+</body>
+
+</html>

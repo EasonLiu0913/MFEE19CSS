@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border radius</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: #e6b08a;
+            float: left;
+            margin: 10px;
+        }
+
+        .border-radius1 {
+            border-radius: 10px 100px;
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+
+        .sector {
+            border-radius: 0 100% 0 0;
+        }
+
+        .special {
+            border-radius: 20px 50px 60px 10px /100px 50px 40px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box border-radius1"></div>
+    <div class="box circle"></div>
+    <div class="box sector"></div>
+    <div class="box special"></div>
+</body>
+
+</html>
