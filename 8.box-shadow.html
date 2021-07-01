@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #afa;
+            float: left;
+            margin: 10px;
+            transition: .5s;
+        }
+
+        .box-shadow1 {
+            box-shadow: 2px 3px 10px #000;
+        }
+
+        .box-shadow2 {
+            box-shadow: 2px 3px 10px 5px #000;
+        }
+
+        .box-shadow3 {
+            box-shadow: 2px 3px 10px 5px #000 inset;
+        }
+
+        .box-shadow4 {
+            box-shadow: 20px 20px 8px rgba(255, 0, 0, 0.2), 20px 20px 8px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box-shadow1"></div>
+    <div class="box box-shadow2"></div>
+    <div class="box box-shadow3"></div>
+    <div class="box box-shadow4"></div>
+</body>
+
+</html>
