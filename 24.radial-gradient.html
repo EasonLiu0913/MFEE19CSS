@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radial gradient</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 200px;
+            /* border-radius: 50%; */
+        }
+
+        .radial-grad {
+            /* background: radial-gradient(purple, yellow 25%, red 100%); */
+            /* background: radial-gradient(circle, purple, yellow 25%, red 100%); */
+            background: radial-gradient(circle at 20% 0px, red, purple);
+            box-shadow: 0px 0px 60px orange;
+        }
+
+        .radial-grad2 {
+            background: repeating-radial-gradient(circle, deeppink, orchid 8%, hotpink 16%, deeppink 25%);
+        }
+
+        h1 {
+            width: fit-content;
+            font-size: 100px;
+            background: linear-gradient(62deg, #4084d1, #E0C3FC, yellow, green, blue);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box radial-grad"></div>
+    <!-- <div class="box radial-grad2"></div> -->
+    <h1>Hello World</h1>
+</body>
+
+</html>

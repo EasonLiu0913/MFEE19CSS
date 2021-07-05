@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical align center</title>
+    <style>
+        .wrap {
+            height: 300px;
+            background: #ccc;
+
+        }
+
+        p {
+            /* vertical-align: center; */
+            width: 100%;
+            text-align: center;
+        }
+
+        .box {
+            height: calc(50% - 22px);
+        }
+
+        span {
+            /* font-size: 5rem;
+            line-height: 2rem;
+            background: #ccc; */
+            line-height: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box"></div>
+        <p>Hello World</p>
+        <div class="box"></div>
+    </div>
+
+    <p style="line-height: 300px;background-color: #ccc;">
+        <span style="vertical-align: 10px;">Hello</span>
+        <span style="vertical-align: -10px;">Hello</span>
+        <span style="vertical-align: middle;">hi</span>
+    </p>
+
+    <table>
+        <tr>
+            <td style="vertical-align: top;">123</td>
+            <td style="vertical-align: bottom;">123</td>
+            <td style="vertical-align: middle;">123</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat blanditiis voluptate, velit
+                repudiandae ut officiis nobis deleniti rem ex ab sapiente deserunt accusantium vel. Dignissimos rem
+                voluptate voluptates ad corrupti.</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

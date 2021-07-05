@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text overflow</title>
+    <style>
+        .container {
+            /* width: 100%; */
+            display: flex;
+        }
+
+        .box {
+            width: 200px;
+            /* 單行省略法 */
+            /* 設定不換行 */
+            /* white-space: nowrap; */
+            /* 設定超出容器外的全部隱藏 */
+            /* overflow: hidden; */
+            /* 文字結尾省略效果 */
+            /* Text-overflow: ellipsis; */
+
+            /* 多行省略法 */
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ex fugit non architecto aliquid
+            maiores perferendis dolor molestias iste laborum, quos illum facere tempora magni, ad similique harum.
+            Numquam, quas.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ex fugit non architecto aliquid
+            maiores perferendis dolor molestias iste laborum, quos illum facere tempora magni, ad similique harum.
+            Numquam, quas.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ex fugit non architecto aliquid
+            maiores perferendis dolor molestias iste laborum, quos illum facere tempora magni, ad similique harum.
+            Numquam, quas.</div>
+    </div>
+</body>
+
+</html>

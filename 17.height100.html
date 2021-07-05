@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height 100</title>
+    <style>
+        .wrap {
+            /* auto 用內容來當做我的高度 */
+            height: 50px;
+        }
+
+        .box1 {
+            /* 自己給一個固定高度 */
+            height: 100px;
+            background-color: #faf;
+        }
+
+        .box2 {
+            /* 我希望從父層繼承高度 */
+            height: 100%;
+            background-color: #afa;
+        }
+
+        .insidebox {
+            height: 50%;
+            background-color: #ffa;
+        }
+
+        .wrapper {
+            height: auto;
+        }
+
+        .boxex1 {
+            height: 100px;
+        }
+
+        .boxex2 {
+            height: 50px;
+        }
+
+        .boxex3 {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box1">
+            <!-- <h1>Hello World box1</h1> -->
+        </div>
+        <div class="box2">
+            <!-- <h1>Hello World box2</h1> -->
+            <!-- <div class="insidebox"></div> -->
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="boxex1"></div>
+        <div class="boxex2"></div>
+        <div class="boxex3"></div>
+    </div>
+
+</body>
+
+</html>

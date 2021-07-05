@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear gradient</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .grad1 {
+            background: linear-gradient(red, orange, yellow, green, blue);
+        }
+
+        .grad2 {
+            background: linear-gradient(to right, red, orange, yellow, green, blue);
+        }
+
+        .grad3 {
+            background: linear-gradient(62deg, #09121c, #E0C3FC, yellow, green, blue);
+        }
+
+        .grad4 {
+            background: linear-gradient(135deg, rgba(0, 0, 255, 1), rgba(0, 0, 255, 0));
+        }
+
+        .grad5 {
+            background: linear-gradient(to right, red 90%, orange 60%, yellow 70%, green, blue, purple 80%);
+        }
+
+        .grad6 {
+            background: linear-gradient(to bottom, lightpink 50%, rgb(252, 252, 113) 50%);
+            background-size: 20px 20px;
+        }
+
+        .grad7 {
+            background: linear-gradient(to right, lightpink 50%, rgb(252, 252, 113) 50%);
+            background-size: 20px 20px;
+        }
+
+        .grad8 {
+            background: linear-gradient(to right, rgba(255, 182, 193, 0.5) 50%, rgba(252, 252, 113, 0.5) 50%), linear-gradient(to bottom, lightpink 50%, rgb(252, 252, 113) 50%);
+            background-size: 20px 20px;
+        }
+
+        .grad9 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box grad1"></div>
+    <div class="box grad2"></div>
+    <div class="box grad3"></div>
+    <div class="box grad4"></div>
+    <div class="box grad5"></div>
+    <div class="box grad6"></div>
+    <div class="box grad7"></div>
+    <div class="box grad8"></div>
+    <div class="box grad9"></div>
+</body>
+
+</html>
