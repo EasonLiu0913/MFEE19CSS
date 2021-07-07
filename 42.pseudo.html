@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+        .price-tag::before {
+            content: "$";
+        }
+
+        .price-tag::after {
+            content: "元";
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: lightsteelblue;
+            position: relative;
+            float: left;
+            margin: 5px;
+        }
+
+        .onsale::after {
+            color: #fff;
+            content: 'ON SALE';
+            display: block;
+            width: 100px;
+            height: 30px;
+            background-color: rgba(255, 0, 0, 0.631);
+            position: absolute;
+            top: 0;
+            right: -25px;
+            box-shadow: 5px 5px 5px rgba(133, 0, 0, 0.467);
+        }
+
+        .pika::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-image: url('./images/3.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="price-tag">
+        <!-- before -->
+        123
+        <!-- after -->
+    </p>
+    <p class="price-tag">
+        113
+    </p>
+    <div class="box pika"></div>
+    <div class="box onsale">
+        <!-- <div class="onsale-tag"></div> -->
+    </div>
+
+    <div class="box pika"></div>
+
+
+
+    <div class="box onsale">
+
+    </div>
+
+
+
+    <div class="box"></div>
+
+</body>
+
+</html>

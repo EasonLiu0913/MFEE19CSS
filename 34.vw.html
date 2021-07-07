@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vw</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            height: 100%;
+            /* 可以用 body overflow-x:hidden 切掉爆版 */
+            overflow-x: hidden;
+        }
+
+        /* vw 會包含右邊的 scroll bar */
+        .box {
+            width: 100vw;
+            height: 100%;
+            background-color: #afa;
+        }
+
+        .bgRed {
+            background-color: rosybrown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box bgRed"></div>
+</body>
+
+</html>
