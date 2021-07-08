@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Y demo</title>
+    <style>
+        .demo {
+            width: 400px;
+            height: 300px;
+            perspective: 1000px;
+            margin: 200px;
+        }
+
+        .title {
+            font-weight: 700;
+        }
+
+        .coordinate {
+            position: relative;
+        }
+
+        .axis-x {
+            position: absolute;
+            width: 300px;
+            height: 1px;
+            border-top: 1px solid #ccc;
+            transform: translate(-100px, 50px);
+        }
+
+        .axis-x::before {
+            content: '-x';
+        }
+
+        .axis-x::after {
+            content: '+x';
+            float: right;
+        }
+
+        .axis-y {
+            width: 1px;
+            height: 300px;
+            border-left: 1px solid #ccc;
+            transform: translate(50px, -100px);
+            position: absolute;
+        }
+
+        .axis-y::before {
+            content: "-y";
+            position: absolute;
+            margin: 0px 0 0 5px;
+            width: 20px;
+        }
+
+        .axis-y::after {
+            content: "-y";
+            position: absolute;
+            margin: 280px 0 0 5px;
+            width: 20px;
+        }
+
+        .axis-z {
+            width: 300px;
+            height: 1px;
+            position: absolute;
+            border-top: 1px dashed #ccc;
+            transform: translate(-100px, 50px) rotate(33deg);
+        }
+
+        .axis-z::before {
+            content: '-z';
+        }
+
+        .axis-z::after {
+            content: '+z';
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <div class="title">Rotate Y</div>
+
+        <div class="coordinate">
+            <div class="axis-x"></div>
+            <div class="axis-y"></div>
+            <div class="axis-z"></div>
+        </div>
+
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
