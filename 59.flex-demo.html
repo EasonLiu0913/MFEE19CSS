@@ -43,7 +43,7 @@
         .nav-left,
         .logo,
         .nav-right {
-            width: 33%;
+            width: 33.33333%;
         }
 
         .nav-left>a {
@@ -74,6 +74,62 @@
             align-self: center;
             padding: 20px;
         }
+
+        .img-300 {
+            width: 300px;
+            height: 300px;
+        }
+
+        .img-300 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sub-title {
+            width: 300px;
+            margin: 100px auto;
+            font-weight: bold;
+        }
+
+        .product-model {
+            width: 500px;
+            height: 700px;
+        }
+
+        .product-model img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .order1 {
+            order: 1;
+        }
+
+        .order2 {
+            order: 2;
+        }
+
+        .demo-model-left {
+            width: 70%;
+        }
+
+        .demo-model-left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .demo-model-right {
+            width: 30%;
+        }
+
+        .demo-model-right img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 
@@ -99,6 +155,72 @@
         <div class="row space-between mb40">
             <h2>New In</h2>
             <a href="#" class="buy-link">Shop Now</a>
+        </div>
+
+        <div class="row space-between">
+            <div class="items">
+                <div class="img-300">
+                    <img src="./flex-demo/product1.jpeg" alt="">
+                </div>
+                <p>Linen Top / Blue</p>
+            </div>
+            <div class="items">
+                <div class="img-300">
+                    <img src="./flex-demo/product2.jpeg" alt="">
+                </div>
+                <p>Linen Top / Blue</p>
+            </div>
+            <div class="items">
+                <div class="img-300">
+                    <img src="./flex-demo/product3.jpeg" alt="">
+                </div>
+                <p>Linen Top / Blue</p>
+            </div>
+        </div>
+
+        <div class="row sub-title">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+        </div>
+
+        <div class="row space-between mb40">
+            <div class="product-info">
+                <div class="img-300">
+                    <img src="./flex-demo/product4.jpeg" alt="">
+                </div>
+
+                <p>Lisa Shirt</p>
+                <p>$50.00</p>
+            </div>
+
+            <div class="product-model">
+                <img src="./flex-demo/model1.jpeg" alt="">
+            </div>
+
+        </div>
+
+        <div class="row space-between mb40">
+            <div class="product-info order2">
+                <div class="img-300">
+                    <img src="./flex-demo/product5.jpeg" alt="">
+                </div>
+
+                <p>Lisa Shirt</p>
+                <p>$50.00</p>
+            </div>
+
+            <div class="product-model order1">
+                <img src="./flex-demo/model2.jpeg" alt="">
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="demo-model-left">
+                <img src="./flex-demo/model3.jpeg" alt="">
+            </div>
+            <div class="demo-model-right">
+                <img src="./flex-demo/model4.jpeg" alt="">
+            </div>
         </div>
 
     </div>
