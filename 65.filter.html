@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <style>
+        .grayscale {
+            filter: grayscale(100%);
+        }
+
+        .sepia {
+            filter: sepia(1);
+        }
+
+        .contrast {
+            filter: contrast(2);
+        }
+
+        .blur {
+            filter: blur(20px);
+        }
+
+        .drop-shadow {
+            filter: drop-shadow(5px 5px 5px #333);
+        }
+
+        .box-shadow {
+            box-shadow: 5px 5px 5px #333;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="grayscale" src="./images/nook_small.jpg" alt="">
+    <img class="sepia" src="./images/nook_small.jpg" alt="">
+    <img class="contrast" src="./images/nook_small.jpg" alt="">
+    <img class="blur" src="./images/nook_small.jpg" alt="">
+    <img class="drop-shadow" src="./images/nook_small.jpg" alt="">
+    <img class="drop-shadow" src="./images/heart.png" alt="">
+    <img class="box-shadow" src="./images/heart.png" alt="">
+</body>
+
+</html>

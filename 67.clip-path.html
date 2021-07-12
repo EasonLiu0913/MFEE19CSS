@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clip path</title>
+    <style>
+        .circle {
+            clip-path: circle(30% at 50% 30%);
+        }
+
+        .ellipse {
+            clip-path: ellipse(25% 50% at 50% 50%);
+        }
+
+        .rect {
+            clip-path: inset(5px 10px 20px 30px round 10% 20% 30% 40%);
+        }
+
+        .polygon {
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+    </style>
+</head>
+
+<body>
+    <img class="circle" src="./images/ex1_pic1.jpg" alt="">
+    <img class="ellipse" src="./images/ex1_pic1.jpg" alt="">
+    <img class="rect" src="./images/ex1_pic1.jpg" alt="">
+    <img class="polygon" src="./images/ex1_pic1.jpg" alt="">
+</body>
+
+</html>

@@ -77,6 +77,25 @@
             content: '+z';
             float: right;
         }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            opacity: .6;
+            animation: rotateY 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotateY {
+            0% {
+                transform: rotate3d(0, 1, 0, 0) translate3d(0px, 0px, -150px);
+            }
+
+            100% {
+                transform: rotate3d(0, 1, 0, 360deg) translate3d(0px, 0px, -150px);
+            }
+        }
     </style>
 </head>
 

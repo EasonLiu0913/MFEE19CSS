@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horse animation step</title>
+    <style>
+        #horse {
+            width: 186px;
+            height: 141px;
+
+            background-image: url("./images/horse-animation.jpg");
+            background-position: -15px -13px;
+
+            animation-name: run;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: step-start;
+        }
+
+        @keyframes run {
+            0% {
+                background-position: -15px -13px;
+            }
+
+            6.25% {
+                background-position: -210px -13px;
+            }
+
+            12.5% {
+                background-position: -403px -13px;
+            }
+
+            18.75% {
+                background-position: -592px -13px;
+            }
+
+            25% {
+                background-position: -15px -165px;
+            }
+
+            31.25% {
+                background-position: -210px -165px;
+            }
+
+            37.5% {
+                background-position: -403px -165px;
+            }
+
+            43.75% {
+                background-position: -592px -165px;
+            }
+
+            50% {
+                background-position: -15px -320px;
+            }
+
+            56.25% {
+                background-position: -210px -320px;
+            }
+
+            62.5% {
+                background-position: -403px -320px;
+            }
+
+            68.75% {
+                background-position: -592px -320px;
+            }
+
+            75% {
+                background-position: -15px -470px;
+            }
+
+            81.25% {
+                background-position: -210px -470px;
+            }
+
+            87.5% {
+                background-position: -403px -470px;
+            }
+
+            93.75% {
+                background-position: -592px -470px;
+            }
+
+            100% {
+                background-position: -592px -470px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="horse"></div>
+</body>
+
+</html>

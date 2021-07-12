@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query desktop</title>
+    <style>
+        /* 桌機優先，一路寫到手機 */
+        h1 {
+            color: lightblue;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                color: lightpink;
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            h1 {
+                color: lightgreen;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+</body>
+
+</html>

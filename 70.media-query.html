@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        /* 建議使用手機優先 */
+        /* 手機優先，一路寫到桌機 */
+        h1 {
+            color: lightblue;
+        }
+
+        .tablets {
+            display: none;
+        }
+
+        .desktop {
+            display: none;
+        }
+
+        @media screen and (min-width:576px) {
+            h1 {
+                color: lightgreen;
+            }
+
+            .mobile {
+                display: none;
+            }
+
+            .tablets {
+                display: block;
+            }
+
+            .desktop {
+                display: none;
+            }
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                color: lightpink;
+            }
+
+            .mobile {
+                display: none;
+            }
+
+            .tablets {
+                display: none;
+            }
+
+            .desktop {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="mobile"> mobile Hello World</h1>
+    <h1 class="tablets"> tablets Hello World</h1>
+    <h1 class="desktop"> desktop Hello World</h1>
+</body>
+
+</html>

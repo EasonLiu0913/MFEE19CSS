@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>animation linear gradient</title>
+<style>
+    .card {
+        width: 300px;
+        height: auto;
+        padding: 20px;
+        background-color: #ccc;
+        border-radius: 10px;
+    }
+
+    .img-wrap {
+        width: 100%;
+        height: 150px;
+    }
+
+    @keyframes loading {
+        to {
+            background-position-x: -20%;
+        }
+    }
+
+    .title {
+        width: 100%;
+        height: 50px;
+        margin: 10px 0;
+    }
+
+    .text {
+        width: 100%;
+        height: 200px;
+        margin: 10px 0;
+    }
+
+    .animation-loading {
+        background: linear-gradient(100deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 60%), rgb(232, 202, 34);
+        background-size: 200% 200%;
+        background-position-x: 120%;
+        animation: loading 1s ease-in-out infinite;
+    }
+</style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="img-wrap animation-loading"></div>
+
+        <div class="title animation-loading"></div>
+
+        <div class="text animation-loading"></div>
+    </div>
+</body>
+
+</html>
